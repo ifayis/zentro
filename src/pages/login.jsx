@@ -41,7 +41,7 @@ function Login() {
     if (Object.keys(validationErrors).length === 0) {
       try {
         const response = await axios.get(
-          `http://localhost:5000/users?email=${form.email}&password=${form.password}`
+          `https://zentro-1qs5.onrender.com/users?email=${form.email}&password=${form.password}`
         );
 
         if (response.data.length > 0) {

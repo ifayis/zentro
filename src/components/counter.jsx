@@ -24,7 +24,7 @@ function Counter() {
 
   const fetchCounter = async (userEmail) => {
     try {
-      const res = await fetch(`http://localhost:5000/counters?email=${userEmail}`);
+      const res = await fetch(`https://zentro-1qs5.onrender.com/counters?email=${userEmail}`);
       const data = await res.json();
       console.log('Fetched counter data:', data);
 

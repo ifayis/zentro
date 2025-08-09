@@ -49,7 +49,7 @@ function Register() {
 
     if (Object.keys(validationErrors).length === 0) {
       try {
-        await axios.post(`http://localhost:5000/users`, {
+        await axios.post(`https://zentro-1qs5.onrender.com/users`, {
           name: form.name,
           email: form.email,
           password: form.password,

@@ -22,7 +22,7 @@ function Timer() {
 
     const fetchData = async () => {
       try {
-        const res = await fetch(`https://zentro-app-znor.onrender.com/timers?email=${email}`);
+        const res = await fetch(`https://zentro-1qs5.onrender.com/timers?email=${email}`);
         const data = await res.json();
 
         if (data.length > 0) {
@@ -31,7 +31,7 @@ function Timer() {
           setLaps(timer.laps || []);
           setDocId(timer.id);
         } else {
-          const res = await fetch(`https://zentro-app-znor.onrender.com/timers`, {
+          const res = await fetch(`https://zentro-1qs5.onrender.com/timers`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, milliseconds: 0, laps: [] }),
@@ -67,7 +67,7 @@ function Timer() {
 
   const saveTimerToDB = async (ms, lapList) => {
     try {
-      await fetch(`https://zentro-app-znor.onrender.com/timers/${docId}`, {
+      await fetch(`https://zentro-1qs5.onrender.com/timers/${docId}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
