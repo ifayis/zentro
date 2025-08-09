@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "da3b",
+      "name": "user",
+      "email": "user1@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "todos": [
+    {
+      "id": "1",
+      "email": "user1@gmail.com",
+      "items": []
+    }
+  ],
+  "counters": [
+    {
+      "id": "dd41",
+      "email": "user1@gmail.com",
+      "value": 0
+    }
+  ],
+  "timers": [
+    {
+      "id": "a5e5",
+      "email": "user1@gmail.com",
+      "milliseconds": 0,
+      "laps": []
+    }
+  ]
+}

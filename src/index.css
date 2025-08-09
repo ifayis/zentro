@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0F172A;
+  --color-secondary: #1E293B;
+  --color-accent: #38BDF8;
+  --color-highlight: #F472B6;
+  --color-text: #F1F5F9;
+}
+
+
+body {
+  @apply bg-primary text-text font-sans;
+}
