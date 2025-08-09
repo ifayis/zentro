@@ -31,7 +31,7 @@ function ToDo() {
         setTodos(data[0].items);
         setDocId(data[0].id);
       } else {
-        const res = await fetch('http://localhost:5000/todos', {
+        const res = await fetch('https://zentro-1qs5.onrender.com/todos', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email: userEmail, items: [] }),
@@ -48,7 +48,7 @@ function ToDo() {
   const saveTodos = async (newTodos) => {
     if (!docId) return;
     try {
-      await fetch(`http://localhost:5000/todos/${docId}`, {
+      await fetch(`https://zentro-1qs5.onrender.com/todos/${docId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
