@@ -112,6 +112,7 @@ function Navbar() {
                         { label: "Counter", path: "/counter" },
                         { label: "Timer", path: "/timer" },
                         { label: "Todo", path: "/todo" },
+                        { label: "Calculator", path: "/calculator" },
                       ].map(({ label, path }) => (
                         <button
                           key={path}
@@ -169,6 +170,7 @@ function Navbar() {
                   { label: "Counter", path: "/counter" },
                   { label: "Timer", path: "/timer" },
                   { label: "Todo", path: "/todo" },
+                  { label: "calculator", path: "/calculator" },
                 ].map(({ label, path }) => (
                   <button
                     key={path}

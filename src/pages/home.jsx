@@ -32,6 +32,13 @@ const apps = [
     icon: "/icons/timer.png",
     path: "/timer",
   },
+  {
+    name: "Calculator",
+    description:
+      "Perform quick and accurate calculations — perfect for everyday math, budgeting, and work tasks.",
+    icon: "/icons/calculator.png",
+    path: "/calculator",
+  },
 ];
 
 function Home() {

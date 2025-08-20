@@ -11,6 +11,7 @@ import Navbar from './pages/navbar'
 import ProtectedRoute from './pages/protectedroute'
 import Features from './pages/features'
 import Contact from './pages/contact'
+import Calculator from './components/calculator'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/counter' element={<Counter />} />
             <Route path='/timer' element={<Timer />} />
             <Route path='/todo' element={<ToDo />} />
+            <Route path='/calculator' element={<Calculator />} />
           </Route>
         </Routes>
       </main>
